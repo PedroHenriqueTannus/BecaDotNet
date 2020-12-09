@@ -39,11 +39,17 @@ namespace BecaDotNet
             AlgoritmoBubbleSort bubble = new AlgoritmoBubbleSort();
             //objeto chama o método de ordenação 
             bubble.OrdenaLista(arr);                      
-            
+            Console.Read();
+
+            //Guilhana Mucelin
+            Console.WriteLine("\n\rGuilhana");
+            bubble.OrdenacaoGuilhana(arr);
             Console.ReadKey();
+
             Ordenador ordenador = new Ordenador();//Instancia Objeto Ordenador.
-            
+
             //leticia sorrilha.
+            Console.WriteLine("\n\r\n\rLeticia");
             ordenador.VetorEntrada = arr;
             ordenador.BubbleSort();//Inicia Ordenação pelo algoritmo BubbleSort.
 
