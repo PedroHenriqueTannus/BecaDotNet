@@ -10,8 +10,15 @@ namespace BecaDotNet
     {
         static void Main(string[] args)
         {
+            //inicializa um array de inteiros
+            int[] arr = { 78, 55, 45, 98, 13 };
 
-            Console.WriteLine("Hello world");
+            //instancia o BubbleSortAlg
+            //pedro luan
+            BubbleSortAlg bubble = new BubbleSortAlg();
+
+            //Executa o método OrdenaListaDeInteiros passando o array
+            bubble.OrdenaListaDeInteiros(arr);
         }
     }
 }
