@@ -14,6 +14,12 @@ namespace BecaDotNet
             int[] ordemDecresc = bs.BubbleExecuteDecrescent(arr);
             bs.LerArray(ordemDecresc);
 
+            //instancia o BubbleSortAlg
+            //pedro luan
+            BubbleSortAlg bubble = new BubbleSortAlg();
+
+            //Executa o método OrdenaListaDeInteiros passando o array
+            bubble.OrdenaListaDeInteiros(arr);
             Console.Read();
         }
     }
