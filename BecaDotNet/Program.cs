@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BecaDotNet
+﻿namespace BecaDotNet
 {
     class Program
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine("Hello world");
+            Algoritmos alg = new Algoritmos();
+            alg.Leitura();
+            alg.Bubblesort();
+            
         }
     }
 }
