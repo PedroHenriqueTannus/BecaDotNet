@@ -1,34 +1,36 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace BecaDotNet
 {
-    class BubbleSort
+    public class BubbleSort
     {
         public static void Iniciar(int[] lista)
         {
             int contador, troca, fim, aux;
-            int[] vetorOrdenar = new int[lista.Length];
-            string[] resultado = new string[lista.Length + 1];
 
-            // Entrada das variáveis
-            for (int i = 0; i < lista.Length; i++)
+            int tamanho = lista.Length;
+            string[] resultado = new string[tamanho + 2];
+
+            // Atribuindo valores para um array do tipo String
+            for (int i = 0; i < tamanho; i++)
             {
-                Console.WriteLine("Coloque o valor da posição " + i +
-                    " digite o " + (i + 1) + "o valor");
-                vetorOrdenar[i] = int.Parse(Console.ReadLine());
-
                 if (i == 0)
                 {
-                    resultado[0] = "" + vetorOrdenar[i];
+                    resultado[0] = "" + lista[i];
                 }
                 else
                 {
-                    resultado[0] += ", " + vetorOrdenar[i];
+                    resultado[0] += ", " + lista[i];
                 }
             }
 
             contador = 1;
             troca = 1;
-            fim = lista.Length - 1;
+            fim = tamanho - 1;
 
             // Aplicação do método Bubble Sort
             while (troca == 1)
@@ -39,27 +41,27 @@ namespace BecaDotNet
                 for (int i = 0; i < fim; i++)
                 {
 
-                    if (vetorOrdenar[i] > vetorOrdenar[i + 1])
+                    if (lista[i] > lista[i + 1])
                     {
-                        aux = vetorOrdenar[i];
-                        vetorOrdenar[i] = vetorOrdenar[i + 1];
-                        vetorOrdenar[i + 1] = aux;
+                        aux = lista[i];
+                        lista[i] = lista[i + 1];
+                        lista[i + 1] = aux;
                         troca = 1;
                     }
                 }
-
                 //Armazenamento das sequências de cada varredura
-                for (int i = 0; i < lista.Length; i++)
+                for (int i = 0; i < tamanho; i++)
                 {
 
                     if (i == 0)
                     {
-                        resultado[contador] = "" + vetorOrdenar[i];
+                        resultado[contador] = "" + lista[i];
                     }
                     else
                     {
-                        resultado[contador] += ", " + vetorOrdenar[i];
+                        resultado[contador] += ", " + lista[i];
                     }
+
                 }
                 fim = fim - 1;
             }
@@ -67,11 +69,17 @@ namespace BecaDotNet
             string resultados = "";
             for (int i = 0; i < contador; i++)
             {
-                resultados += i + "a Varredura: " + resultado[i + 1] + "\n";
+                if (i != 0)
+                {
+                    resultados += i+1 + "a Varredura: " + resultado[i + 1] + "\n";
+                } else
+                {
+                    resultados += i+1 + "a Varredura: " + resultado[i] + "\n";
+                }
             }
-            Console.WriteLine("Os valores iniciais foram: " + resultado[0] +
+            Console.WriteLine("Você colocou os seguintes valores: " + resultado[0] +
                 "\n Os valores em ordem ficam: " + resultado[contador - 1] + "\n" +
-                "\n Foram necessárias " + contador + " varreduras" + "\n" +
+                "\n Foram necessárias " + (contador) + " varreduras" + "\n" +
                 "\n As ordens das varredauras ficam: " + "\n" + resultados);
             Console.ReadLine();
         }
