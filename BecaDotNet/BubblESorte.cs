@@ -27,14 +27,10 @@ namespace BecaDotNet
                         entrada[j] = troca;
 
                     }
-
-
-
-
                 }
             }
-                
- 
+
+
 
 
 
