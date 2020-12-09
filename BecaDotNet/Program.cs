@@ -13,14 +13,8 @@ namespace BecaDotNet
             //instancia um objeto do tipo BubbleSort
             AlgoritmoBubbleSort bubble = new AlgoritmoBubbleSort();
 
-            //chama o método de ordenação que retorna a lista ordenada
-            int[] listaOrdenada = bubble.OrdenaLista(listaValores);
-
-            //impressão da lista ordenada
-            foreach (int item in listaOrdenada)
-            {
-                Console.Write(item + " ");
-            }
+            //objeto chama o método de ordenação 
+            bubble.OrdenaLista(listaValores);                      
             
             Console.Read();
         }

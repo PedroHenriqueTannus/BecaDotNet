@@ -1,10 +1,12 @@
-﻿namespace BecaDotNet
+﻿using System;
+
+namespace BecaDotNet
 {
     class AlgoritmoBubbleSort
     {
 
         //metodo para ordenação de valores em um array
-        public int[] OrdenaLista(int[] listaValores)
+        public void OrdenaLista(int[] listaValores)
         {
             int count = 0;
 
@@ -22,8 +24,11 @@
                     }
                 }
             }
-            return listaValores;
-
+            //impressão da lista ordenada
+            foreach (int item in listaValores)
+            {
+                Console.Write(item + " ");
+            }
         }
     }
 }
