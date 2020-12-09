@@ -2,9 +2,9 @@
 
 namespace BecaDotNet
 {
-    public static class BubbleSort
+    public static class BubbleSort                  // Classe que contém o método para ordenar os valores.
     {
-        public static void Sortear(int[] lista)
+        public static void Sortear(int[] lista)     // Método que recebe um array como parâmetro e faz a ordenação BubbleSort.
         {
             int[] arr = lista;
 
