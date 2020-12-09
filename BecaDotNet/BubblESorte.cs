@@ -15,23 +15,28 @@ namespace BecaDotNet
 
             int troca = 0;
 
-
-
-            for (int i = 0; i < entrada.Length - 1; i++)
+            for (int i = 0; i < entrada.Length; i++)
             {
-
-                if (entrada[i] > entrada[i + 1])
+                for (int j = 0; j < entrada.Length - 1; j++)
                 {
-                    troca = entrada[];
-                    entrada[i] = entrada[i + 1];
-                    entrada[i + 1] = troca;
+
+                    if (entrada[j] > entrada[j + 1])
+                    {
+                        troca = entrada[j + 1];
+                        entrada[j + 1] = entrada[j];
+                        entrada[j] = troca;
+
+                    }
+
+
+
 
                 }
-
-
-
-
             }
+                
+ 
+
+
 
 
             return entrada;
@@ -54,4 +59,4 @@ namespace BecaDotNet
     }
 
 }
-}
+
