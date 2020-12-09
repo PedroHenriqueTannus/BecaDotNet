@@ -6,7 +6,7 @@ namespace BecaDotNet
         static void Main(string[] args)
         {
             int[] arr = { 78, 55, 45, 98, 13 };
-            Bubblesort bs = new Bubblesort();
+            BubbleSort bs = new BubbleSort();
             //chamada Diego Prestes
             int[] ordemCresc = bs.BubbleExecuteCrescent(arr);
             bs.LerArray(ordemCresc);

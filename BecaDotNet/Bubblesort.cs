@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BecaDotNet
 {
-    class Bubblesort
+    public class BubbleSort
     {
         public void LerArray(int[] ordenado)
         {
