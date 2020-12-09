@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Estevão Filipe Cardoso da Silva
 namespace BecaDotNet
 {
     class Program
@@ -15,6 +16,7 @@ namespace BecaDotNet
 
             BubbleSort bb = new BubbleSort();
 
+            // Estevão Filipe Cardoso da Silva
             // vetor destino da ordenação
             int[] ret = new int[5];
                
