@@ -48,6 +48,36 @@ namespace BecaDotNet
             ordenador.BubbleSort();//Inicia Ordenação pelo algoritmo BubbleSort.
 
             Console.ReadKey();
+
+
+
+            //pedro luan e stevao
+            // instacia o BubbleSortAlg 
+            BubbleSortAlg bubble2 = new BubbleSortAlg();
+
+            // chamada do metodo que cria o vetor 
+            int[] vet = CriaVetor();
+
+            // chamada do metodo 
+            bubble2.OrdenaListaDeInteiros2(vet);
+        }
+
+        private static int[] CriaVetor()
+        {
+            // Mine menu incial
+            Console.WriteLine("Quatidade de numeros do array: ");
+            // Leitura da quatidade escolhida 
+            int qtd = int.Parse(Console.ReadLine());
+            // instancia do vetor com quantidade escolhida de indices 
+            int[] vet = new int[qtd];
+            // adiciona ao vetor cada valor digitado
+            for (int i = 0; i < qtd; i++)
+            {
+                Console.WriteLine("Digite o " + (i + 1) + "° numero: ");
+                vet[i] = int.Parse(Console.ReadLine());
+            }
+
+            return vet;
         }
     }
 }
