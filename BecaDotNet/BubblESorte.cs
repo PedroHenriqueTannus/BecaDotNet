@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace BecaDotNet
 {
-    class BubbleSorte
+    public class BubbleSorte    
     {
 
-
+        // Metodo de ordenação 
         public int[] ordenacao(int[] entrada)
         {
 
@@ -29,20 +29,12 @@ namespace BecaDotNet
                     }
                 }
             }
-
-
-
-
-
-
-            return entrada;
-
-
+             return entrada;
         }
 
+        // metodo para retornar os dados do array
         public string saida(int[] entrada)
         {
-
             string dados = "";
             for (int i = 0; i < entrada.Length; i++)
             {
@@ -50,7 +42,6 @@ namespace BecaDotNet
             }
 
             return dados;
-
         }
     }
 

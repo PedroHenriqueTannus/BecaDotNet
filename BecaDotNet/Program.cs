@@ -16,7 +16,6 @@ namespace BecaDotNet
 
             // chamada Bruno Alexandre
             BubbleSorte bubleSort = new BubbleSorte();
-            int[] arr = { 78, 55, 45, 98, 13 };
             int[] saida = bubleSort.ordenacao(arr);
             Console.WriteLine(bubleSort.saida(saida));
             Console.Read();
