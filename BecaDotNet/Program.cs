@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BecaDotNet
 {
@@ -10,8 +6,10 @@ namespace BecaDotNet
     {
         static void Main(string[] args)
         {
+            int[] lista = { 78, 55, 45, 98, 13 };
 
-            Console.WriteLine("Hello world");
+            BubbleSort.Sortear(lista);
+            Console.ReadLine();
         }
     }
 }
