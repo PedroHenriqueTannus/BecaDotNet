@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/* Marcelo Renato Garcia Pezzolla */
+
+using System;
 
 namespace BecaDotNet
 {
@@ -10,8 +8,12 @@ namespace BecaDotNet
     {
         static void Main(string[] args)
         {
+            //Classe, tem como parâmetro de entrada uma lista de inteiros.
+            int[] arr = { 78, 55, 45, 98, 13 };
 
-            Console.WriteLine("Hello world");
+            //Chama função BolhaSort para ordenar os numeros inteiros
+            BubbleSort.BolhaSort(arr);
+            Console.ReadLine();
         }
     }
 }
