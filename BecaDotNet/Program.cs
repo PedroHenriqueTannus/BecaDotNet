@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace BecaDotNet
 {
     class Program
@@ -21,6 +26,14 @@ namespace BecaDotNet
             //Executa o método OrdenaListaDeInteiros passando o array
             bubblesort.OrdenaListaDeInteiros(arr);
             Console.Read();
+
+            //PAULA MACHADO TEIXEIRA
+            //instancia um objeto do tipo BubbleSort
+            AlgoritmoBubbleSort bubble = new AlgoritmoBubbleSort();
+            //objeto chama o método de ordenação 
+            bubble.OrdenaLista(arr);                      
+            
+            Console.ReadKey();
         }
     }
 }
