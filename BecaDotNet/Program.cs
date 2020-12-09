@@ -6,20 +6,19 @@ namespace BecaDotNet
         static void Main(string[] args)
         {
             int[] arr = { 78, 55, 45, 98, 13 };
-            BubbleSort bs = new BubbleSort();
+            BubbleSortAlg bubblesort = new BubbleSortAlg();
+
             //chamada Diego Prestes
-            int[] ordemCresc = bs.BubbleExecuteCrescent(arr);
-            bs.LerArray(ordemCresc);
+            int[] ordemCresc = bubblesort.BubbleExecuteCrescent(arr);
+            bubblesort.LerArray(ordemCresc);
             //chamada Diego Prestes
-            int[] ordemDecresc = bs.BubbleExecuteDecrescent(arr);
-            bs.LerArray(ordemDecresc);
+            int[] ordemDecresc = bubblesort.BubbleExecuteDecrescent(arr);
+            bubblesort.LerArray(ordemDecresc);
 
             //instancia o BubbleSortAlg
             //pedro luan
-            BubbleSortAlg bubble = new BubbleSortAlg();
-
             //Executa o método OrdenaListaDeInteiros passando o array
-            bubble.OrdenaListaDeInteiros(arr);
+            bubblesort.OrdenaListaDeInteiros(arr);
             Console.Read();
         }
     }
