@@ -35,12 +35,12 @@ namespace BecaDotNet
             
             Console.ReadKey();
             Ordenador ordenador = new Ordenador();//Instancia Objeto Ordenador.
-            int[] vetEntrada = { 98, 78, 55, 45, 13 };// Vetor de Entrada desordenado.
+            
             //leticia sorrilha.
-            ordenador.VetorEntrada = vetEntrada;
+            ordenador.VetorEntrada = arr;
             ordenador.BubbleSort();//Inicia Ordenação pelo algoritmo BubbleSort.
 
-            Console.Read();
+            Console.ReadKey();
         }
     }
 }
