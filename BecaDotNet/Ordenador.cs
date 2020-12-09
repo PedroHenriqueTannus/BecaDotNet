@@ -33,7 +33,7 @@ namespace BecaDotNet
         //Imprime vetor ordenado
         public void Imprimir(int[] vet)
         {
-            Console.Write("\nVetor Ordenado: ");
+            Console.Write("Vetor Ordenado: ");
             for (int i = 0; i < vet.Length; i++)
             {
                 Console.Write(vet[i]);
