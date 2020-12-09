@@ -13,9 +13,9 @@ namespace BecaDotNet
             BubbleSorte bubleSort = new BubbleSorte();
 
             int[] arr = { 78, 55, 45, 98, 13 };
-            int[] saida = logica.ordenacao(arr);
+            int[] saida = bubleSort.ordenacao(arr);
 
-            Console.WriteLine(logica.saida(saida));
+            Console.WriteLine(bubleSort.saida(saida));
             Console.Read();
         }
     }
