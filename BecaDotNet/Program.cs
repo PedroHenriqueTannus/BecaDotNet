@@ -11,7 +11,8 @@ namespace BecaDotNet
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Hello world");
+            BubbleSort.Iniciar();
+
         }
     }
 }
