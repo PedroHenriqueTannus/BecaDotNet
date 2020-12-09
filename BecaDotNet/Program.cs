@@ -1,6 +1,4 @@
-﻿/* Marcelo Renato Garcia Pezzolla */
-
-using System;
+﻿using System;
 
 namespace BecaDotNet
 {
@@ -11,6 +9,7 @@ namespace BecaDotNet
             //Classe, tem como parâmetro de entrada uma lista de inteiros.
             int[] arr = { 78, 55, 45, 98, 13 };
 
+            /* Marcelo Renato Garcia Pezzolla */
             //Chama função BolhaSort para ordenar os numeros inteiros
             BubbleSort.BolhaSort(arr);
             Console.ReadLine();
