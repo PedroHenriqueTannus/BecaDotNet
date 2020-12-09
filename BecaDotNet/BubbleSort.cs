@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace BecaDotNet
 {
-    class BubbleSortAlg
+    public class BubbleSortAlg
     {
+
         public void OrdenaListaDeInteiros(int[] arr)
         {
             //declara uma variável que recebe o valor que será trocado
@@ -19,7 +20,7 @@ namespace BecaDotNet
             {
                 for (int i = 0; i < arr.Length - 1; i++)
                 {
-                    
+
                     if (arr[i + 1] < arr[i])
                     {
                         //troca numeros que estão em sequência 

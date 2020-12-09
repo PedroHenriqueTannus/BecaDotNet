@@ -14,6 +14,7 @@ namespace BecaDotNet
             //chamada Diego Prestes
             int[] ordemDecresc = bubblesort.BubbleExecuteDecrescent(arr);
             bubblesort.LerArray(ordemDecresc);
+            Console.Read();
 
             //instancia o BubbleSortAlg
             //pedro luan
