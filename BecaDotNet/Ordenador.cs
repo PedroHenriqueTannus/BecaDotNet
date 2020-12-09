@@ -14,9 +14,8 @@ namespace BecaDotNet
         public void BubbleSort()
         {
             int[] vet = VetorEntrada;// Recebe vetor de entrada.
-            int lenght = vet.Length;
             
-            for (int i = lenght - 1; i >= 1; i--)
+            for (int i = vet.Length - 1; i >= 1; i--)
             {
                 for (int j = 0; j < i; j++)
                 {
