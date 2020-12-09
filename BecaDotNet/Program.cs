@@ -41,6 +41,13 @@ namespace BecaDotNet
             bubble.OrdenaLista(arr);                      
             
             Console.ReadKey();
+            Ordenador ordenador = new Ordenador();//Instancia Objeto Ordenador.
+            
+            //leticia sorrilha.
+            ordenador.VetorEntrada = arr;
+            ordenador.BubbleSort();//Inicia Ordenação pelo algoritmo BubbleSort.
+
+            Console.ReadKey();
         }
     }
 }
