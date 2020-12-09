@@ -40,7 +40,6 @@ namespace BecaDotNet
 
                 for (int i = 0; i < fim; i++)
                 {
-
                     if (lista[i] > lista[i + 1])
                     {
                         aux = lista[i];
@@ -52,7 +51,6 @@ namespace BecaDotNet
                 //Armazenamento das sequências de cada varredura
                 for (int i = 0; i < tamanho; i++)
                 {
-
                     if (i == 0)
                     {
                         resultado[contador] = "" + lista[i];
@@ -61,7 +59,6 @@ namespace BecaDotNet
                     {
                         resultado[contador] += ", " + lista[i];
                     }
-
                 }
                 fim = fim - 1;
             }
@@ -79,7 +76,7 @@ namespace BecaDotNet
             }
             Console.WriteLine("Você colocou os seguintes valores: " + resultado[0] +
                 "\n Os valores em ordem ficam: " + resultado[contador - 1] + "\n" +
-                "\n Foram necessárias " + (contador) + " varreduras" + "\n" +
+                "\n Foram necessárias " + contador + " varreduras" + "\n" +
                 "\n As ordens das varredauras ficam: " + "\n" + resultados);
             Console.ReadLine();
         }
