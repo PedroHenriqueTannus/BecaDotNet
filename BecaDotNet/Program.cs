@@ -10,8 +10,13 @@ namespace BecaDotNet
     {
         static void Main(string[] args)
         {
+            BubbleSorte bubleSort = new BubbleSorte();
 
-            Console.WriteLine("Hello world");
+            int[] arr = { 78, 55, 45, 98, 13 };
+            int[] saida = logica.ordenacao(arr);
+
+            Console.WriteLine(logica.saida(saida));
+            Console.Read();
         }
     }
 }
