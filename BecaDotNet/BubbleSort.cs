@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExemploCSharp
+namespace BecaDotNet
 {
     class BubbleSort
     {
