@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BecaDotNet
+﻿namespace BecaDotNet
 {
-    class BubbleSort
+    class AlgoritmoBubbleSort
     {
-        public static int[] OrdenaLista(int[] listaValores)
+
+        //metodo para ordenação de valores em um array
+        public int[] OrdenaLista(int[] listaValores)
         {
             int count = 0;
 

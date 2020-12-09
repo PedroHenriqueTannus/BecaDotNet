@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BecaDotNet
 {
@@ -10,10 +6,17 @@ namespace BecaDotNet
     {
         static void Main(string[] args)
         {
+            //seta os valores de entrada 
             int[] listaValores = { 78, 55, 45, 98, 13 };
 
-            int[] listaOrdenada = BubbleSort.OrdenaLista(listaValores);
+            //PAULA MACHADO TEIXEIRA
+            //instancia um objeto do tipo BubbleSort
+            AlgoritmoBubbleSort bubble = new AlgoritmoBubbleSort();
 
+            //chama o método de ordenação que retorna a lista ordenada
+            int[] listaOrdenada = bubble.OrdenaLista(listaValores);
+
+            //impressão da lista ordenada
             foreach (int item in listaOrdenada)
             {
                 Console.Write(item + " ");
