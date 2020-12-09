@@ -10,16 +10,10 @@ namespace BecaDotNet
     {
         static void Main(string[] args)
         {
-            Ordenador ordenador = new Ordenador();
-            int[] vetEntrada = { 98, 78, 55, 45, 13 };
+            Ordenador ordenador = new Ordenador();//Instancia Objeto Ordenador.
+            int[] vetEntrada = { 98, 78, 55, 45, 13 };// Vetor de Entrada desordenado.
             ordenador.VetorEntrada = vetEntrada;
-            int[] vet = ordenador.BubbleSort();
-
-            Console.Write("Vetor Ordenado: ");
-            for (int i = 0; i < vet.Length; i++)
-            {
-                Console.Write(vet[i] + ", ");
-            }
+            ordenador.BubbleSort();//Inicia Ordenação pelo algoritmo BubbleSort.
 
             Console.Read();
         }
