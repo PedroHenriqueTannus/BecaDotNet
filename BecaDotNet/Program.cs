@@ -11,7 +11,8 @@ namespace BecaDotNet
 
             /* Marcelo Renato Garcia Pezzolla */
             //Chama função BolhaSort para ordenar os numeros inteiros
-            BubbleSort.BolhaSort(arr);
+            BubbleSort bb = new BubbleSort();
+            bb.BolhaSort(arr);
             Console.ReadLine();
         }
     }

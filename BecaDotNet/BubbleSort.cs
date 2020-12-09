@@ -4,7 +4,7 @@ namespace BecaDotNet
 {
     class BubbleSort
     {
-        public static void BolhaSort(int[] arr)
+        public void BolhaSort(int[] arr)
         {
 
             int temp = 0; // seta variavel temporaria
