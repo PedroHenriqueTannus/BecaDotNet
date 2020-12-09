@@ -4,6 +4,44 @@
     {
         static void Main(string[] args)
         {
+           
+            int[] arr = { 78, 55, 45, 98, 13 };
+            BubbleSortAlg bubblesort = new BubbleSortAlg();
+
+            // chamada Bruno Alexandre
+            BubbleSorte bubleSort = new BubbleSorte();
+            int[] saida = bubleSort.ordenacao(arr);
+            Console.WriteLine(bubleSort.saida(saida));
+            Console.Read();
+
+            //chamada Diego Prestes
+            int[] ordemCresc = bubblesort.BubbleExecuteCrescent(arr);
+            bubblesort.LerArray(ordemCresc);
+            //chamada Diego Prestes
+            int[] ordemDecresc = bubblesort.BubbleExecuteDecrescent(arr);
+            bubblesort.LerArray(ordemDecresc);
+            Console.Read();
+
+            //instancia o BubbleSortAlg
+            //pedro luan
+            //Executa o método OrdenaListaDeInteiros passando o array
+            bubblesort.OrdenaListaDeInteiros(arr);
+            Console.Read();
+
+            //PAULA MACHADO TEIXEIRA
+            //instancia um objeto do tipo BubbleSort
+            AlgoritmoBubbleSort bubble = new AlgoritmoBubbleSort();
+            //objeto chama o método de ordenação 
+            bubble.OrdenaLista(arr);                      
+            
+            Console.ReadKey();
+            Ordenador ordenador = new Ordenador();//Instancia Objeto Ordenador.
+            
+            //leticia sorrilha.
+            ordenador.VetorEntrada = arr;
+            ordenador.BubbleSort();//Inicia Ordenação pelo algoritmo BubbleSort.
+
+            Console.ReadKey();
             //Autor: Eduardo Lacerda
             int[] lista = { 78, 55, 45, 98, 13 };
             BubbleSort.Iniciar(lista);
