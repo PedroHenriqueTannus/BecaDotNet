@@ -30,7 +30,10 @@ namespace BecaDotNet
                 Console.Write(item + " ");
             }
         }
-
+        /// <summary>
+        /// Ordena uma lista de inteiros com o algoritmo BubbleSort
+        /// </summary>
+        /// <param name="listaValores">lista de valores inteiros</param>
         public void OrdenacaoGuilhana(int[] listaValores)
         {
            
