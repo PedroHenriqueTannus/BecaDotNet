@@ -1,26 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace BecaDotNet
 {
     class BubbleSort
     {
-        public static void Iniciar()
+        public static void Iniciar(int[] lista)
         {
             int contador, troca, fim, aux;
-
-            // Quantidade de Variáveis
-            Console.WriteLine("Quantos valores deseja ordenar?");
-            int tamanho = int.Parse(Console.ReadLine());
-
-            int[] vetorOrdenar = new int[tamanho];
-            string[] resultado = new string[tamanho + 1];
+            int[] vetorOrdenar = new int[lista.Length];
+            string[] resultado = new string[lista.Length + 1];
 
             // Entrada das variáveis
-            for (int i = 0; i < tamanho; i++)
+            for (int i = 0; i < lista.Length; i++)
             {
                 Console.WriteLine("Coloque o valor da posição " + i +
                     " digite o " + (i + 1) + "o valor");
@@ -38,7 +28,7 @@ namespace BecaDotNet
 
             contador = 1;
             troca = 1;
-            fim = tamanho - 1;
+            fim = lista.Length - 1;
 
             // Aplicação do método Bubble Sort
             while (troca == 1)
@@ -59,7 +49,7 @@ namespace BecaDotNet
                 }
 
                 //Armazenamento das sequências de cada varredura
-                for (int i = 0; i < tamanho; i++)
+                for (int i = 0; i < lista.Length; i++)
                 {
 
                     if (i == 0)
@@ -70,18 +60,16 @@ namespace BecaDotNet
                     {
                         resultado[contador] += ", " + vetorOrdenar[i];
                     }
-
                 }
                 fim = fim - 1;
             }
-
             //Saída mostrando o resultado do BubbleSort e todo o processo feito
             string resultados = "";
             for (int i = 0; i < contador; i++)
             {
                 resultados += i + "a Varredura: " + resultado[i + 1] + "\n";
             }
-            Console.WriteLine("Você colocou os seguintes valores: " + resultado[0] +
+            Console.WriteLine("Os valores iniciais foram: " + resultado[0] +
                 "\n Os valores em ordem ficam: " + resultado[contador - 1] + "\n" +
                 "\n Foram necessárias " + contador + " varreduras" + "\n" +
                 "\n As ordens das varredauras ficam: " + "\n" + resultados);
