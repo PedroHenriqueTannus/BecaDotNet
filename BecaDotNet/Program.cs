@@ -10,8 +10,16 @@ namespace BecaDotNet
     {
         static void Main(string[] args)
         {
+            int[] listaValores = { 78, 55, 45, 98, 13 };
 
-            Console.WriteLine("Hello world");
+            int[] listaOrdenada = BubbleSort.OrdenaLista(listaValores);
+
+            foreach (int item in listaOrdenada)
+            {
+                Console.Write(item + " ");
+            }
+            
+            Console.Read();
         }
     }
 }
