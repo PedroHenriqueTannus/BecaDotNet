@@ -6,12 +6,13 @@ namespace ExemploCSharp
     {
         public static void BolhaSort(int[] arr)
         {
-            int temp = 0;
-            for (int i = 0; i < arr.Length; i++)
+
+            int temp = 0; // seta variavel temporaria
+            for (int i = 0; i < arr.Length; i++) //for para comparar os valores
             {
                 for (int j = 0; j < arr.Length; j++)
                 {
-                    if (arr[i] < arr[j])
+                    if (arr[i] < arr[j]) //ve se um valor é maior que o outro
                     {
                         temp = arr[i];
                         arr[i] = arr[j];
@@ -20,10 +21,10 @@ namespace ExemploCSharp
 
                 }
             }
-
+            //imprime os valores em ordem separados por espaço
             for (int i = 0; i < arr.Length; i++)
             {
-                Console.Write(arr[i]);
+                Console.Write(arr[i] + " ");
                 Console.WriteLine();
             }
 
