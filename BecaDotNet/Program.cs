@@ -10,15 +10,8 @@ namespace BecaDotNet
     {
         static void Main(string[] args)
         {
-           
             int[] arr = { 78, 55, 45, 98, 13 };
             BubbleSortAlg bubblesort = new BubbleSortAlg();
-
-            // chamada Bruno Alexandre
-            BubbleSorte bubleSort = new BubbleSorte();
-            int[] saida = bubleSort.ordenacao(arr);
-            Console.WriteLine(bubleSort.saida(saida));
-            Console.Read();
 
             //chamada Diego Prestes
             int[] ordemCresc = bubblesort.BubbleExecuteCrescent(arr);
