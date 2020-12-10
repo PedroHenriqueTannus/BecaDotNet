@@ -43,8 +43,7 @@
 
             Console.ReadKey();
             //Autor: Eduardo Lacerda
-            int[] lista = { 78, 55, 45, 98, 13 };
-            BubbleSort.Iniciar(lista);
+            BubbleSort.Iniciar(arr);
 
         }
     }
