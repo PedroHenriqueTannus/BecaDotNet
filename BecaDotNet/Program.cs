@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BecaDotNet
+﻿namespace BecaDotNet
 {
     class Program
     {
@@ -54,6 +48,9 @@ namespace BecaDotNet
             ordenador.BubbleSort();//Inicia Ordenação pelo algoritmo BubbleSort.
 
             Console.ReadKey();
+            //Autor: Eduardo Lacerda
+            BubbleSort.Iniciar(arr);
+
         }
     }
 }
